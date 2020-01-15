@@ -1,0 +1,8 @@
+.filter-options select {
+    height: 4rem;
+    width: 40%;
+}
+
+#restaurants-list li {
+    width: 48%;
+}
