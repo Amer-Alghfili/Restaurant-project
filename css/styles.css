@@ -14,7 +14,7 @@ ul {
   margin: 0;
 }
 a {
-	color: orange;
+	/* color: orange; */
 	text-decoration: none;
 }
 a:hover, a:focus {
@@ -59,7 +59,6 @@ nav h1 a {
   text-transform: uppercase;
 }
  #breadcrumb {
-    margin-top: 10px;
     font-size: 1.2em;
     color: orange;
 }

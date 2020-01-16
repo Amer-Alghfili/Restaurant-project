@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <!-- Normalize.css for better cross-browser consistency -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -15,6 +15,7 @@
       integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
       crossorigin=""
     />
+    <!-- <script src="serviceWorker.js"></script> -->
     <title>Restaurant Info</title>
   </head>
 
@@ -23,11 +24,13 @@
     <header>
         <a href='#main-content' class='skip-main'>Go to main content ?</a>
       <!-- Beginning nav -->
-      <nav class="restaurant-nav">
+      <nav>
         <h1><a href="/">Restaurant Reviews</a></h1>
-        <ul id="breadcrumb">
-          <li><a href="/">Home</a></li>
-        </ul>
+        <nav role="navigation" aria-label="breadcrumb">
+          <ul id="breadcrumb">
+            <li><a href="/">Home</a></li>
+          </ul>
+        </nav>
       </nav>
       <!-- Beginning breadcrumb -->
       <!-- End breadcrumb -->
@@ -39,7 +42,7 @@
     <main id="maincontent">
       <!-- Beginning map -->
       <section id="map-container">
-        <div id="map"></div>
+        <div id="map" aria-label="location" role="application"></div>
       </section>
       <!-- End map -->
       <!-- Beginning restaurant -->
